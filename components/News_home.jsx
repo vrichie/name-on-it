@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import { useState } from 'react'
 
+
+import { Button } from 'semantic-ui-react'
 import style from '../styles/News_home.module.css'
 
 import Mobile from '../styles/Mobile_home.module.css'
@@ -62,7 +64,7 @@ useEffect(() => {
             <div className={style.trending}>
 
                 <h2>
-                    Check out whats' poppin
+                    Check out whats poppin
                 </h2>
 
 

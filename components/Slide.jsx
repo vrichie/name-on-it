@@ -2,9 +2,12 @@ import style from '../styles/Slide.module.css'
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link';
+    import axios from "axios";
+    import Slider from'react-slick'
     import Config from '../config/config.json'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Carousel } from 'react-responsive-carousel';
 export default function Slide() {
     const [post,setPost]=useState([]);
 

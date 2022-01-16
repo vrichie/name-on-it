@@ -3,9 +3,6 @@ import Config from '../config/config.json'
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { useState } from 'react'
-
-
-
 import style from '../styles/Entertainment_home.module.css'
 import Mobile from '../styles/Mobile_home.module.css'
 
@@ -78,14 +75,14 @@ useEffect(() => {
             <div className={style.trending}>
 
                 <h2>
-                    Check out whats' poppin
+                    Check out whats poppin
                 </h2>
 
 
                 {
                     second.map((post,index)=>(
 
-                        <Link href={`./article/${post.slug}`} key={index}> 
+                        <Link href={`./article/${post.slug}`} key={index} passHref> 
                         
                         
                             <span className={style.trend_list}>
@@ -115,7 +112,7 @@ useEffect(() => {
                 {
                     main_post.map((post,index)=>(
 
-                        <Link href={`./article/${post.slug}`} key={index}>
+                        <Link href={`./article/${post.slug}`} key={index} passHref>
 
                                                                 
                             <div className={style.main_item_card}>
@@ -210,7 +207,7 @@ useEffect(() => {
 
                         {
                             mpost.map((post,key)=>(
-                                <Link href={`./article/${post.slug}`} key={key}>
+                                <Link href={`./article/${post.slug}`} key={key} passHref>
                                 
                                 
                                     <li>

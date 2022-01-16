@@ -1,7 +1,9 @@
 import {useState,useEffect} from 'react'
 import style from '../../styles/Navbar.module.css'
+import * as Icon from 'react-bootstrap-icons';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import {Redirect} from 'react-router-dom';
 import Config from '../../config/config.json'
 const api_url=Config.IP_ADDRESS+"projects/api/src/include/category/search/?";
 export default function Searchbar() {

@@ -1,4 +1,5 @@
 import style from '../styles/Footer.module.css'
+import * as Icon from 'react-bootstrap-icons';
 
 
 
@@ -32,6 +33,25 @@ export default function Footer() {
                     <div id={style.social}>
 
 
+
+                        <span>
+                            <Icon.Instagram size={30} />
+                        </span>
+                        <span>
+                            <Icon.Facebook size={30} />
+                        </span>
+                        <span>
+                            <Icon.Twitter size={30} />
+                        </span>
+                        <span>
+                            <Icon.Telegram size={30} />
+                        </span>
+                        <span>
+                            <Icon.Envelope size={30} />
+                        </span>
+                        
+
+                  
                 
 
 
@@ -64,28 +84,28 @@ export default function Footer() {
                 <div className={style.textright}>
                         <ul>
                             <li>
-                              
+                                <Icon.HouseDoorFill size={20}/>
                                 <p>
                                    Home 
                                 </p>
                                 
                             </li>
                             <li>
-                               
+                                <Icon.PeopleFill size={20}/>
                                 <p>
 
                                 Our team
                                 </p>
                             </li>
                             <li>
-                           
+                                <Icon.PersonLinesFill size={20}/>
                                 <p>
 
                                 Our Contacts
                                 </p>
                             </li>
                             <li>
-                                
+                                <Icon.InfoLg size={20}/>
                                 <p>
 
                                 About us
